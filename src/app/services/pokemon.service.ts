@@ -13,4 +13,8 @@ export class PokemonService {
   getPokemon(name : string){
     return this.http.get(`${this.url}/${name}`)
   }
+
+  getAllPokemon(){
+    return this.http.get(this.url)
+  }
 }

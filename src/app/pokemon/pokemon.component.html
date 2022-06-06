@@ -1,3 +1,6 @@
-<p>Nombre</p>
-<input type="text" />
-<button class="btn btn-primary">Buscar</button>
+<p>Buscar Pokemon</p>
+<input type="text" [(ngModel)]="name" placeholder="Digite Nombre Pokemon" />
+<button (click)="search()" class="btn btn-primary">Buscar</button>
+<p>{{namePokemon}}</p>
+<img src="{{ urlImage }}" />
+
